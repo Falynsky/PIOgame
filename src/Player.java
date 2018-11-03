@@ -12,15 +12,13 @@ public abstract class Player {
 	}
 	
 	@Override
-	public String toString()
-	{
+	public String toString(){
 		return this.getClass().getSimpleName() + " : " +name; //PlayerComputer : Player
 		//return super.toString()+ " : " + name; //PlayerComputer@4554617c : Player
 	}
 
 	public void setName(String name) { // !"".equals(name) && !name.isEmpty() for objects
-		if (name != null && name.matches(regex))  
-			this.name = name;
+		if (name != null && name.matches(regex))  this.name = name;
 		else { 
 			throw new IllegalArgumentException("Wrong name");
 			}
