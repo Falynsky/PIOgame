@@ -4,27 +4,36 @@ import java.util.Scanner;
 public class Program {
 
 	private static Scanner choose;
-
+	final static Random rand = new Random();
+	
 	public static void main(String[] args) {
-
-		final Random rand = new Random();
 
 		int cube;
 		choose = new Scanner(System.in);
 
-		Player player = null;
-		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
-		switch(choose.nextInt())
-		{
-		case 1: player = new PlayerHuman();
-		case 2: player = new PlayerComputer();
-		default:
-			break;
-		}
-		try{
-			//https://regex101.com/
-			player.setName("2Kamil");
+		Player player = new PlayerHuman(new GUIInput());
+//		Player player = null;
 
+		
+//		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
+		
+//		choosee = choose.nextInt();
+//		if(choosee == 1) player = new PlayerHuman();
+//		else if (choosee == 2) player = new PlayerComputer();
+//		
+		
+//		TextInput in;
+//		System.out.println("What's the type of input?\n\t1. Console\n\t2. GUI\n");
+//		int choosee = choose.nextInt();
+//		if(choosee == 1)	player(new ConsoleInput());
+//		else if (choosee == 2)	player(new GUIInput());
+
+
+		
+		try{					
+			player.askForName();
+								//https://regex101.com/
+								//player.setName("Kamil");
 			int guess;
 			do {
 				cube = rand.nextInt(6) + 1;
