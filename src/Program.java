@@ -1,60 +1,76 @@
-import java.util.Random;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 public class Program {
 
-	private static Scanner choose;
-	final static Random rand = new Random();
-	
-	public static void main(String[] args) {
+    private static Scanner choos = new Scanner(System.in);
 
-		int cube;
-		choose = new Scanner(System.in);
+    public static void main(String[] args) {
 
-		Player player = new PlayerHuman(new GUIInput());
-//		Player player = null;
+//      Game game = new Game(); 
+//     
+//      		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
+//		int choose = choos.nextInt();
+//		if(choose == 1) {
+//                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
+//                    choose = choos.nextInt();
+//                    if(choose == 1)	game.add_Player(new PlayerHuman(new ConsoleInput()));
+//                    else if (choose == 2)	game.add_Player(new PlayerHuman(new GUIInput()));
+//                }
+//
+//		else if (choose == 2) {
+//                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
+//                    choose = choos.nextInt();
+//                    if(choose == 1) game.add_Player(new PlayerComputer(new ConsoleInput()));
+//                    else if (choose == 2)	game.add_Player(new PlayerComputer(new GUIInput()));
+//                }
+//
+//
+//      game.play();
 
-		
-//		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
-		
-//		choosee = choose.nextInt();
-//		if(choosee == 1) player = new PlayerHuman();
-//		else if (choosee == 2) player = new PlayerComputer();
-//		
-		
-//		TextInput in;
-//		System.out.println("What's the type of input?\n\t1. Console\n\t2. GUI\n");
-//		int choosee = choose.nextInt();
-//		if(choosee == 1)	player(new ConsoleInput());
-//		else if (choosee == 2)	player(new GUIInput());
+    //typy uogólnione - dla zainteresowanych , tzn. mnie :)fgry6iikiti8ht5
+      List<String> list = new ArrayList();
+      
+      list.add("raz");
+      list.add("dwa");
+      list.add("trzy");
 
-
-		
-		try{					
-			player.askForName();
-								//https://regex101.com/
-								//player.setName("Kamil");
-			int guess;
-			do {
-				cube = rand.nextInt(6) + 1;
-				guess = player.guess();
-
-				if (guess != cube)
-					System.out.println(
-							"Wrong " + player.getName() + "! Value of Cube = " + cube + " and Your guess = " + guess);
-				else
-					System.out.println("\nWell done " + player.getName() + "! You're right!");
-
-			} while (guess != cube);
-		}
-//		catch (IllegalArgumentException e){
-//			System.err.println("\nWrong name human :/\n");
-//			//player.setName(choose.nextLine());
-//		}
-		catch (Exception e){
-			System.out.println("\nError." +player.toString());
-		}
-	}
+        System.out.println(list);
+        int i = 0; 
+        
+        System.out.println("WHILE HERE VVV ");
+        //tylko while
+        while(i<list.size())
+        {
+            System.out.println("\t"+list.get(i));
+            i++;
+        }
+        System.out.println("FOR EACH HERE VVV ");
+        //for each dla javy
+        for(String o : list){
+            System.out.println("\t"+o);
+        }
+        System.out.println("ITERATOR HERE VVV ");
+        Iterator<String> itr = list.iterator();
+        
+        while(itr.hasNext()){
+            System.out.println("\t"+itr.next());
+        }
+        
+        
+//        iterator - obiekt ktroy bedzie umial p otej lsicie iterowac (ustawia sien a poczatku patrzy przed siebie zna: 
+//          NEXT() - skacze to co widzie przed soba i zwraca, 
+//          hasNEXT() - czy jest nastepny
+//          remove() - usuwa, 
+//        
+//        
+        
+        
+    }
 }
 
-//lab 3
+
+		
+		
