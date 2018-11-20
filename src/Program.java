@@ -9,26 +9,26 @@ public class Program {
 
     public static void main(String[] args) {
 
-//      Game game = new Game(); 
-//     
-//      		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
-//		int choose = choos.nextInt();
-//		if(choose == 1) {
-//                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
-//                    choose = choos.nextInt();
-//                    if(choose == 1)	game.add_Player(new PlayerHuman(new ConsoleInput()));
-//                    else if (choose == 2)	game.add_Player(new PlayerHuman(new GUIInput()));
-//                }
-//
-//		else if (choose == 2) {
-//                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
-//                    choose = choos.nextInt();
-//                    if(choose == 1) game.add_Player(new PlayerComputer(new ConsoleInput()));
-//                    else if (choose == 2)	game.add_Player(new PlayerComputer(new GUIInput()));
-//                }
-//
-//
-//      game.play();
+      Game game = new Game(); 
+     
+      		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
+		int choose = choos.nextInt();
+		if(choose == 1) {
+                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
+                    choose = choos.nextInt();
+                    if(choose == 1)	game.add_Player(new PlayerHuman(new ConsoleInput()));
+                    else if (choose == 2)	game.add_Player(new PlayerHuman(new GUIInput()));
+                }
+
+		else if (choose == 2) {
+                    System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
+                    choose = choos.nextInt();
+                    if(choose == 1) game.add_Player(new PlayerComputer(new ConsoleInput()));
+                    else if (choose == 2)	game.add_Player(new PlayerComputer(new GUIInput()));
+                }
+
+
+      game.play();
 
     //typy uogólnione - dla zainteresowanych , tzn. mnie :)fgry6iikiti8ht5
       List<String> list = new ArrayList();
