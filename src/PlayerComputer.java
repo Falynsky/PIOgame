@@ -15,6 +15,9 @@ public class PlayerComputer extends Player {
 
     private final Random rand = new Random();
 
+//    public PlayerComputer(String name) {
+//        super(name);
+//    }
     public PlayerComputer(TextInput in) {
         super(in);
     }

@@ -26,6 +26,9 @@ public abstract class Player {
         this.in = in;
         this.setName(name);
     }
+//    public Player(String name) {
+//    	this.setName(name);
+//    }
 
     public void setTextInput(TextInput in) {
 
