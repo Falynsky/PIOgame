@@ -46,10 +46,7 @@ public class Game {
 //			if(players.get(i).equals(name)) players.remove(i);
 //			break;
 //		} 
-		for(Player o : players){
-      System.out.println("\t"+o);
-  }
-		
+
 	}
 
 	public void play() {

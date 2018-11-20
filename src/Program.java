@@ -35,8 +35,9 @@ public class Program {
 		numerOfPlayers--;
       }while(numerOfPlayers!=0);
 
+      
+      game.play();
       game.removePlayer("Kamil");
-      //game.play();
 
     //typy uogólnione - dla zainteresowanych , tzn. mnie :)fgry6iikiti8ht5
 //      List<String> list = new ArrayList();
