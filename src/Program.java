@@ -3,6 +3,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
+
+/**
+ *
+ * @author Falu
+ */
 public class Program {
 
     private static Scanner choos = new Scanner(System.in);
@@ -10,12 +15,10 @@ public class Program {
     public static void main(String[] args) {
 
       Game game = new Game(); 
-    
-      int numerOfPlayers = 0;
       
       System.out.println("How many players?\n\tNumber: ");
       
-      numerOfPlayers = choos.nextInt();
+      int numerOfPlayers = choos.nextInt();
       do{
       		System.out.println("Who's the Player?\n\t1. Human\n\t2. Computer\n");
       		int choose = choos.nextInt();
@@ -38,7 +41,8 @@ public class Program {
       
       game.play();
       game.removePlayer("Kamil");
-
+    }
+}
     //typy uogólnione - dla zainteresowanych , tzn. mnie :)fgry6iikiti8ht5
 //      List<String> list = new ArrayList();
 //      
@@ -74,11 +78,7 @@ public class Program {
 //          hasNEXT() - czy jest nastepny
 //          remove() - usuwa, 
 //        
-//        
-        
-        
-    }
-}
+//        	
 
 
 		

@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Falu
+ */
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -72,9 +76,9 @@ public class Game {
 	        
 
 			if (guess != cube)
-				System.out.println("Wrong! Value of Cube = " + cube + " and Your guess = " + guess);
+				System.out.println("Wrong!  " + player.getName() + ", Value of Cube = " + cube + " and Your guess = " + guess);
 			else{
-				System.out.println("Well done! " + player.getName() + " You're right!");
+				System.out.println("Well done! " + player.getName() + " You're right!" + ", Value of Cube = " + cube);
 				oneMore = false;
 				}
 			}	

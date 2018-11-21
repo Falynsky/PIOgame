@@ -1,3 +1,5 @@
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,6 +21,10 @@ public class PlayerHuman extends Player {
     public PlayerHuman(TextInput in, String name) {
         super(in, name);
     }
+    
+//    public PlayerHuman(String name) {
+//        super( name);
+//    }
 
     @Override
     public int guess() {
