@@ -25,15 +25,15 @@ public class Program {
 		if(choose == 1) {
                     System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
                     choose = choos.nextInt();
-                    if(choose == 1)	game.add_Player(new PlayerHuman(new ConsoleInput()));
-                    else if (choose == 2)	game.add_Player(new PlayerHuman(new GUIInput()));
+                    if(choose == 1)	game.add_Player(new PlayerHuman("Kamil"));
+                    else if (choose == 2)	game.add_Player(new PlayerHuman("Kamil"));
                 }
 
 		else if (choose == 2) {
                     System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
                     choose = choos.nextInt();
-                    if(choose == 1) game.add_Player(new PlayerComputer(new ConsoleInput()));
-                    else if (choose == 2)	game.add_Player(new PlayerComputer(new GUIInput()));
+                    if(choose == 1) game.add_Player(new PlayerComputer("Kamil"));
+                    else if (choose == 2)	game.add_Player(new PlayerComputer("Kamil"));
                 }
 		numerOfPlayers--;
       }while(numerOfPlayers!=0);

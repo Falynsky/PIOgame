@@ -26,7 +26,12 @@ public class PlayerComputer extends Player {
     public PlayerComputer(TextInput in, String name) {
         super(in, name);
     }
+    
+    public PlayerComputer(String name) {
+        super(name);
+    }
 
+    @Override
     public int guess() {
         int value = 0;
 

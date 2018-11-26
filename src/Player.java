@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public abstract class Player {
 
-    protected String name = "Player";
+    protected String name = "Default Player";
     private static Scanner choose = new Scanner(System.in);;
     final String regex = "^[a-zA-Z][a-zA-Z0-9._@-]+$";
     private TextInput in;
@@ -25,9 +25,9 @@ public abstract class Player {
         this.in = in;
         this.setName(name);
     }
-//    public Player(String name) {
-//    	this.setName(name);
-//    }
+    public Player(String name) {
+        setName(name);
+    }
 
     public void setTextInput(TextInput in) {
 

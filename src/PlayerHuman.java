@@ -22,9 +22,9 @@ public class PlayerHuman extends Player {
         super(in, name);
     }
     
-//    public PlayerHuman(String name) {
-//        super( name);
-//    }
+    public PlayerHuman(String name) {
+        super( name);
+    }
 
     @Override
     public int guess() {
