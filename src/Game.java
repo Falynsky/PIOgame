@@ -7,11 +7,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+
 public class Game {
 
 	//protected Player player;
 	protected Random rand = new Random();
+	Stats stats = new NullStatistics();
 	protected List<Player> players = new ArrayList<>();
+	
+	public Game() {}
+	public Game (Stats stats)
+	{
+		this.stats = stats;
+	}
 
 	public void add_Player(Player player) {
 		if(player!=null){	
@@ -75,11 +83,14 @@ public class Game {
 				i++;
 	        
 
-			if (guess != cube)
+			if (guess != cube){
 				System.out.println("Wrong!  " + player.getName() + ", Value of Cube = " + cube + " and Your guess = " + guess);
+			}
 			else{
 				System.out.println("Well done! " + player.getName() + " You're right!" + ", Value of Cube = " + cube);
 				oneMore = false;
+				stats.andTheWinnerIs(player.getName());
+
 				}
 			}	
 		}while (oneMore);

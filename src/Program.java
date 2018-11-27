@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Scanner;
 
 
@@ -14,6 +11,7 @@ public class Program {
 
     public static void main(String[] args) {
 
+//      Stats stats = new NullStatistics();
       Game game = new Game(); 
       
       System.out.println("How many players?\n\tNumber: ");
@@ -29,7 +27,10 @@ public class Program {
                     else if (choose == 2)	game.add_Player(new PlayerHuman("Kamil"));
                 }
 
-		else if (choose == 2) {
+		else if (choose == 2)
+		{
+			
+			
                     System.out.println("Type of input\n\t1. Console\n\t2. GUI\n");
                     choose = choos.nextInt();
                     if(choose == 1) game.add_Player(new PlayerComputer("Kamil"));
@@ -38,9 +39,12 @@ public class Program {
 		numerOfPlayers--;
       }while(numerOfPlayers!=0);
 
+      for(int i = 0; i < 100; ++i)
+      {
+    	  game.play();
+      }
+        
       
-      game.play();
-      game.removePlayer("Kamil");
     }
 }
     //typy uogólnione - dla zainteresowanych , tzn. mnie :)fgry6iikiti8ht5
