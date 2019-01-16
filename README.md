@@ -1,2 +1,8 @@
 # PIOgame
-Program which I'm doing on basics of software engineering
+
+Author: Kamil Faliński
+
+Destinaton: Simple Single/Multiplayer console game based on guessing the number.
+
+The closest goals: 
+  - JUnit
