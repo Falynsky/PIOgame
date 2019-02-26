@@ -1,4 +1,3 @@
-
 import javax.swing.JOptionPane;
 
 public class GUIInput implements TextInput {

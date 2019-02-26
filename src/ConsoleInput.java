@@ -19,6 +19,7 @@ public class ConsoleInput implements TextInput {
         String text = null;
         System.out.print("What's Your name?\n\nOh, My name is ");
         text = choose.nextLine();
+        System.out.println();
         return text;
     }
 
